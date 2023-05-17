@@ -1,0 +1,26 @@
+{
+  "name": "waktaplay_cronjob",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "cron": "tsc ./src/cron/cacheMusicData.ts && node ./src/cron/cacheMusicData.js",
+    "cron:statistics": "tsc ./src/cron/cacheStatisticsData.ts && node ./src/cron/cacheStatisticsData.js"
+  },
+  "dependencies": {
+    "axios": "^1.3.5",
+    "dotenv": "^16.0.3",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/node-cron": "^3.0.7",
+    "@types/react": "18.0.33",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
